@@ -30,13 +30,14 @@ function Header({ children, menuOptions, isReturnEnabled, onClickReturnButton, i
             onClick={onClickReturn}
           >
             {isReturnEnabled && <Icon name="chevron-left" className="w-8 text-primary-active" />}
-            <div className="ml-4">{WhiteLabeling ? CustomLogo(React) : <Svg name="logo-ohif" />}</div>
+            <a href="https://precious-md.com/" >
+              <div className="ml-4">{WhiteLabeling ? CustomLogo(React) : <Svg name="logo-precious" />}</div>
+            </a>
           </div>
         </div>
         <div className="flex items-center">{children}</div>
         <div className="flex items-center">
           <span className="mr-3 text-lg text-common-light">
-            {t('INVESTIGATIONAL USE ONLY')}
           </span>
           <Dropdown id="options" showDropdownIcon={false} list={menuOptions}>
             <IconButton
