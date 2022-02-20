@@ -56,6 +56,8 @@ import measureTemp from './icons/measure-temp.svg';
 import objectGroup from './icons/object-group.svg';
 import ohifLogo from './icons/ohif-logo.svg';
 import ohifTextLogo from './icons/ohif-text-logo.svg';
+import preciousMDLogo from './icons/precious-logo-image.svg'
+import preciousMDTextLogo from './icons/precious-logo-image-text.svg'
 import oval from './icons/oval.svg';
 import palette from './icons/palette.svg';
 import play from './icons/play.svg';
@@ -134,6 +136,8 @@ const ICONS = {
   list,
   'ohif-logo': ohifLogo,
   'ohif-text-logo': ohifTextLogo,
+  'precious-logo':preciousMDLogo,
+  'precious-text-logo':preciousMDTextLogo,
   lock,
   play,
   database,

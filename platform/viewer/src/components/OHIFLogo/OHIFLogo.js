@@ -4,6 +4,26 @@ import { Icon } from '@ohif/ui';
 import React from 'react';
 
 function OHIFLogo() {
+    return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="header-brand"
+      href="https://precious-md.com"
+    >
+      //<Icon name="precious-md-logo" className="header-logo-image" />
+      {/* Logo text would fit smaller displays at two lines:
+       *
+       * Open Health
+       * Imaging Foundation
+       *
+       * Or as `OHIF` on really small displays
+       */}
+      <Icon name="precious-text-logo" className="header-logo-text" />
+    </a>
+  );
+
+
   return (
     <a
       target="_blank"

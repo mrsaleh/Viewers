@@ -2,10 +2,14 @@ import React from 'react';
 // Svgs
 import ohifLogoText from './svgs/ohif-logo-text.svg';
 import ohifLogoWrappedText from './svgs/ohif-logo-wrapped-text.svg';
+import preciousMDLogoImage from './svgs/precious-logo-image.svg';
+import preciousMDLogoImageText from './svgs/precious-logo-image-text.svg';
 
 const SVGS = {
   'ohif-logo-wrapped-text': ohifLogoWrappedText,
   'ohif-logo-text': ohifLogoText,
+  'precious-logo-image':preciousMDLogoImage,
+  'precious-logo-image-text':preciousMDLogoImageText
 };
 
 /**
