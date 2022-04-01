@@ -24,14 +24,15 @@ function showReportModal(UIModalService, data) {
       noCloseButton: false,
       onClose: () => UIModalService.hide({ id: aiResultModalId }),
       actions: [
-        { id: 'save', text: 'Save report', type: 'primary' },
-        { id: 'close', text: 'Close', type: 'secondary' },
+        // { id: 'save', text: 'Save report', type: 'primary' },
+        // { id: 'close', text: 'Close', type: 'secondary' },
+        { id: 'close', text: 'Close', type: 'primary' },
       ],
       onSubmit: (data) => {
         switch (data.action.id) {
-          case 'save':
-            UIModalService.hide({ id: aiResultModalId })
-            break;
+          // case 'save':
+          //   UIModalService.hide({ id: aiResultModalId })
+          //   break;
           case 'close':
             UIModalService.hide({ id: aiResultModalId })
             break;
@@ -166,6 +167,20 @@ export default {
 
   onModeEnter({ servicesManager, commandsManager }) {
 
+    console.log('my extension commands manager:', commandsManager)
+    commandsManager.registerCommand('VIEWER', 'precious.ai.diagnose', {
+      commandFn: (params) => {
+        console.log('precious saleh command called!')
+
+        cornerstoneTools.setToolActive('EllipticalRoi',
+          {
+            mouseButtonMask: 1,
+          });
+
+      }
+    })
+
+
     const { MeasurementService } = servicesManager.services
 
     MeasurementService.subscribe(MeasurementService.EVENTS.MEASUREMENT_ADDED,
@@ -192,16 +207,32 @@ export default {
           console.log('request data:', requestData)
 
 
-          // console.log('my extension commands manager:', commandsManager)
-          // commandsManager.registerCommand('VIEWER', 'precious.ai.diagnose', {
-          //   commandFn: (params) => {
-          //     console.log('precious saleh command called!')
 
-          //   }
-          // })
         }
       })
-  }
+  },
 
+  // getCommandsModule
 
 }
+
+
+// const getCommandsModule = ({ servicesManager }) => {
+//   return {
+//     definitions: {
+//       myannotation: {
+//         commandFn: ({ element }) => {
+//           console.log('Saleh yo!')
+
+//           // Set same tool or alt tool
+//           cornerstoneTools.setToolActiveForElement(element, toolName, {
+//             mouseButtonMask: 1,
+//           });
+//         },
+//         storeContexts: [],
+//         options: {},
+//       },
+//     },
+//     defaultContext: 'ACTIVE_VIEWPORT::TRACKED',
+//   };
+// }

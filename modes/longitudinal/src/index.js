@@ -88,16 +88,16 @@ export default function mode({ modeConfiguration }) {
         type: 'ohif.radioGroup',
         props: {
           type: 'action',
-          icon: 'eye-visible',
-          label: 'Diagnose',
+          icon: 'tool-ai2',
+          label: 'AI Diagnose',
           // commandOptions: { toolName: 'Zoom' },
           commandName: 'precious.ai.diagnose'
         },
       }])
       ToolBarService.addButtons(toolbarButtons);
       ToolBarService.createButtonSection('primary', [
-        'MeasurementTools',
         'Diagnose',
+        'MeasurementTools',
         'Zoom',
         'WindowLevel',
         'Pan',

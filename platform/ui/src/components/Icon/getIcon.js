@@ -39,6 +39,8 @@ import tracked from './../../assets/icons/tracked.svg';
 import unlink from './../../assets/icons/unlink.svg';
 
 /** Tools */
+import toolAI from './../../assets/icons/tool-ai.svg';
+import toolAI2 from './../../assets/icons/tool-ai2.svg';
 import toolZoom from './../../assets/icons/tool-zoom.svg';
 import toolCapture from './../../assets/icons/tool-capture.svg';
 import toolLayout from './../../assets/icons/tool-layout.svg';
@@ -104,6 +106,8 @@ const ICONS = {
   unlink: unlink,
 
   /** Tools */
+  'tool-ai': toolAI,
+  'tool-ai2': toolAI2,
   'tool-zoom': toolZoom,
   'tool-capture': toolCapture,
   'tool-layout': toolLayout,
