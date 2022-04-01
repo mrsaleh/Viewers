@@ -23,6 +23,8 @@ import OHIFDefaultExtension from '@ohif/extension-default';
 import OHIFCornerstoneExtension from '@ohif/extension-cornerstone';
 import OHIFMeasurementTrackingExtension from '@ohif/extension-measurement-tracking';
 import OHIFDICOMSRExtension from '@ohif/extension-dicom-sr';
+import PRECIOUSAIExtension from '@precious/extension-ai';
+
 
 /** Combine our appConfiguration and "baked-in" extensions */
 const appProps = {
@@ -32,6 +34,7 @@ const appProps = {
     OHIFCornerstoneExtension,
     OHIFMeasurementTrackingExtension,
     OHIFDICOMSRExtension,
+    PRECIOUSAIExtension,
   ],
 };
 
