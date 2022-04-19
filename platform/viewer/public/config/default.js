@@ -12,9 +12,9 @@ window.config = {
       sourceName: 'dicomweb',
       configuration: {
         name: 'Orthanc',
-        wadoUriRoot: 'http://109.228.60.98/orthanc/wado',
-        qidoRoot: 'http://109.228.60.98/orthanc/dicom-web',
-        wadoRoot: 'http://109.228.60.98/orthanc/dicom-web',
+        wadoUriRoot: 'https://viewer.precious-md.com/orthanc/wado',
+        qidoRoot: 'https://viewer.precious-md.com/orthanc/dicom-web',
+        wadoRoot: 'https://viewer.precious-md.com/orthanc/dicom-web',
         qidoSupportsIncludeField: true,
         qidoSupportsIncludeField: false,
         imageRendering: 'wadors',

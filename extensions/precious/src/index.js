@@ -9,6 +9,10 @@ const waitForAIModalId = 'precious-ai-processing-dialog'
 const aiResultModalId = 'precious-ai-result-dialog'
 let canceled = false
 
+
+/**
+ * This function shows report modal
+ */
 function showReportModal(UIModalService, data) {
   console.log("Report:", data)
   UIModalService.show({
@@ -117,7 +121,7 @@ function showWaitForAIModal(UIModalService) {
 
 async function callAI(request_data) {
 
-  const response = await fetch('http://109.228.60.98/ai/api/v1/prediction/select',
+  const response = await fetch('https://viewer.precious-md.com/ai/api/v1/prediction/select',
     {
       method: 'POST',
       headers: {
@@ -212,27 +216,4 @@ export default {
       })
   },
 
-  // getCommandsModule
-
 }
-
-
-// const getCommandsModule = ({ servicesManager }) => {
-//   return {
-//     definitions: {
-//       myannotation: {
-//         commandFn: ({ element }) => {
-//           console.log('Saleh yo!')
-
-//           // Set same tool or alt tool
-//           cornerstoneTools.setToolActiveForElement(element, toolName, {
-//             mouseButtonMask: 1,
-//           });
-//         },
-//         storeContexts: [],
-//         options: {},
-//       },
-//     },
-//     defaultContext: 'ACTIVE_VIEWPORT::TRACKED',
-//   };
-// }
