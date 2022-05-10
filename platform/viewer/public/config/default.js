@@ -12,9 +12,9 @@ window.config = {
       sourceName: 'dicomweb',
       configuration: {
         name: 'Orthanc',
-        wadoUriRoot: 'https://viewer.precious-md.com/orthanc/wado',
-        qidoRoot: 'https://viewer.precious-md.com/orthanc/dicom-web',
-        wadoRoot: 'https://viewer.precious-md.com/orthanc/dicom-web',
+        wadoUriRoot: 'https://viewer.preciousmd.com/orthanc/wado',
+        qidoRoot: 'https://viewer.preciousmd.com/orthanc/dicom-web',
+        wadoRoot: 'https://viewer.preciousmd.com/orthanc/dicom-web',
         qidoSupportsIncludeField: true,
         qidoSupportsIncludeField: false,
         imageRendering: 'wadors',
@@ -41,7 +41,7 @@ window.config = {
     console.warn(error.status);
 
     // Could use services manager here to bring up a dialog/modal if needed.
-    console.warn('test, navigate to https://ohif.org/');
+   
   },
   // whiteLabeling: {
   //   /* Optional: Should return a React component to be rendered in the "Logo" section of the application's Top Navigation bar */

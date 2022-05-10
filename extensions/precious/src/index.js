@@ -121,7 +121,7 @@ function showWaitForAIModal(UIModalService) {
 
 async function callAI(request_data) {
 
-  const response = await fetch('https://viewer.precious-md.com/ai/api/v1/prediction/select',
+  const response = await fetch('https://viewer.preciousmd.com/api/v1/prediction/select',
     {
       method: 'POST',
       headers: {
